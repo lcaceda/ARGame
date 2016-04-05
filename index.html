@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+  <title> Atlanta Region Game </title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+<style>
+    html, body, #map {
+        height: 100%;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+</style>
+  </head>
+
+
+  <body>
+    <section id="header">
+      <h1>What do you know about your region, ATL?</h1>
+    </section>
+    <section id="nav">
+      <ul>
+        <li><a class="active" href="">Present Day</a></li>
+        <li><a href="">Future ATL</a></li>
+      </ul>
+    </section>
+    <section id="gameRules">
+    <h2> 20 questions to prove yourself. </h2>
+    <p> STEP ONE: Click on a sqauare </p>
+    <p> STEP TWO: Try your darndest to answer correctly</p>
+    <p> STEP THREE: Collect as many correct answers as you can</p>
+    <p> STEP FOUR: That's pretty much it....Thanks!</p>
+    </section>
+    <section id="gameBoard">
+      <!--<div class = "map"><img src="./imgs/allCounties.png"> -->
+            <div class="cell" id="item-0">1</div>
+            <div class="cell" id="item-1">2</div>
+            <div class="cell" id="item-2">3</div>
+            <div class="cell" id="item-3">4</div>
+            <div class="cell" id="item-4">5</div>
+            <div class="cell" id="item-5">6</div>
+            <div class="cell" id="item-6">7</div>
+            <div class="cell" id="item-7">8</div>
+            <div class="cell" id="item-8">9</div>
+            <div class="cell" id="item-9">10</div>
+            <div class="cell" id="item-10">11</div>
+            <div class="cell" id="item-11">12</div>
+            <div class="cell" id="item-12">13</div>
+            <div class="cell" id="item-13">14</div>
+            <div class="cell" id="item-14">15</div>
+            <div class="cell" id="item-15">16</div>
+            <div class="cell" id="item-16">17</div>
+            <div class="cell" id="item-17">18</div>
+            <div class="cell" id="item-18">19</div>
+            <div class="cell" id="item-19">20</div>
+            <div class="prompt"></div>
+
+       </div>
+
+       <div id="dialog-0" title="Question 1">
+         <div class="ui-dialog-content">
+           <p> What is the current population of the Atlanta Region?</p>
+              <input type='radio' name='answ-0' value="1"> 5.6 million</input> <br>
+              <input type='radio' name='answ-0' value="0"> 7 million</input>
+              <br>
+              <p><a href="http://atlantaregionsplan.com/population-employment-forecasts/">Need a hint?</a></p>
+              <br>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-1" title="Question 2">
+         <div class="ui-dialog-content">
+           <p> How many counties make up the Atlanta Metropolitan Planning Organization?</p>
+              <input type='radio' name='answ-0' value="0"> 17</input> <br>
+              <input type='radio' name='answ-0' value="1"> 20</input>
+              <br>
+              <p> <a href="http://documents.atlantaregional.com/GISdocs/ARC_Regions_Map_11x17.pdf">Need a hint?</a></p>
+              <br>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-2" title="Question 3">
+         <div class="ui-dialog-content">
+           <p> Which county has the highest population of Millennials?</p>
+              <input type='radio' name='answ-0' value="0"> Cobb</input> <br>
+              <input type='radio' name='answ-0' value="1"> Fulton</input>
+              <br>
+              <p><a href="http://atlantaregionsplan.com/population-employment-forecasts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-3" title="Question 4">
+         <div class="ui-dialog-content">
+           <p> Which county has the highest population of Baby Boomers?</p>
+              <input type='radio' name='answ-0' value="0"> Cobb</input> <br>
+              <input type='radio' name='answ-0' value="1"> Fulton</input>
+              <br>
+              <p><a href="http://atlantaregionsplan.com/population-employment-forecasts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-4" title="Question 5">
+         <div class="ui-dialog-content">
+           <p> How many cities are there in our region?</p>
+              <input type='radio' name='answ-0' value="0">56</input> <br>
+              <input type='radio' name='answ-0' value="1">81</input>
+              <br>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+          <div id="dialog-5" title="Question 6">
+          <div class="ui-dialog-content">
+           <p> How many transit trips are provided in our  region annually?</p>
+              <input type='radio' name='answ-0' value="1"> $137 million</input> <br>
+              <input type='radio' name='answ-0' value="0"> $13.7 million</input>
+              <br>
+              <p><a href="http://data.gatransit.org/#rc/arc/service">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-6" title="Question 7">
+         <div class="ui-dialog-content">
+           <p> How many transit agencies do we have in the Region (excluding univeristy and development shuttles)?</p>
+              <input type='radio' name='answ-0' value="1"> 6</input> <br>
+              <input type='radio' name='answ-0' value="0"> 2</input>
+              <br>
+              <p> <a href="http://atltransit.org/about/agencies/">Need a hint?</a></p>
+              <br>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-7" title="Question 8">
+         <div class="ui-dialog-content">
+           <p> Which county has the highest Generation Z population?</p>
+              <input type='radio' name='answ-0' value="0"> Gwinnett</input> <br>
+              <input type='radio' name='answ-0' value="1"> Fulton</input>
+              <br>
+              <p><a href="http://atlantaregionsplan.com/population-employment-forecasts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-8" title="Question 9">
+         <div class="ui-dialog-content">
+           <p> How much did water cosumption per person drop in our region between 2000 and 2010?</p>
+              <input type='radio' name='answ-0' value="1"> 20%</input> <br>
+              <input type='radio' name='answ-0' value="0"> 10%</input>
+              <br>
+              <p><a href="http://www.atlantaregional.com/about-us/news-press/press-releases/facts-about-water-use-in-georgia-and-metro-atlanta">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-9" title="Question 10">
+         <div class="ui-dialog-content">
+           <p> Which county has the highest Generation Z population?</p>
+              <input type='radio' name='answ-0' value="0"> Gwinnett</input> <br>
+              <input type='radio' name='answ-0' value="1"> Fulton</input>
+              <br>
+              <p><a href="http://atlantaregionsplan.com/population-employment-forecasts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-10" title="Question 11">
+         <div class="ui-dialog-content">
+           <p> Which city is our only Green Community to have earned the Platinum certification level?</p>
+              <input type='radio' name='answ-0' value="1"> City of Decatur</input> <br>
+              <input type='radio' name='answ-0' value="0">City of Atlanta</input>
+              <br>
+              <p><a href="http://www.atlantaregional.com/environment/green-communities/certified-green-communities">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-11" title="Question 12">
+         <div class="ui-dialog-content">
+           <p> Which roadway type overwhelmingly has the highest annual average particulate model negatively affecting ou air quality?</p>
+              <input type='radio' name='answ-0' value="1"> Inter-state Roads</input> <br>
+              <input type='radio' name='answ-0' value="0">Minor Arterials</input>
+              <br>
+              <p><a href="http://atlregional.github.io/dispersion/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-12" title="Question 13">
+         <div class="ui-dialog-content">
+           <p> Per active counts data ARC has, do people use a bicycle along the 10th St Cycle Track on rainy days?</p>
+              <input type='radio' name='answ-0' value="1">Yes</input> <br>
+              <input type='radio' name='answ-0' value="0">No</input>
+              <br>
+              <p><a href="http://atlregional.github.io/active-counts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-12" title="Question 13">
+         <div class="ui-dialog-content">
+           <p> Per The Atlanta Region's Plan survery, what is the top transportation vision for the future?</p>
+              <input type='radio' name='answ-0' value="0">Repairing our roads</input> <br>
+              <input type='radio' name='answ-0' value="1">Investing in transit</input>
+              <br>
+              <p><a href="http://atlregional.github.io/active-counts/">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+        <div id="dialog-12" title="Question 13">
+         <div class="ui-dialog-content">
+           <p> According to the latest data from the American Community Survey, of the 100 census tracts with the highest median household incomes, all but _____ are located north of I-20.</p>
+              <input type='radio' name='answ-0' value="0">all but one</input> <br>
+              <input type='radio' name='answ-0' value="1">all but four</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/snapshots/income_fullpres_final.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-13" title="Question 14">
+         <div class="ui-dialog-content">
+           <p> What is the current median household income in our region?</p>
+              <input type='radio' name='answ-0' value="0">$48,880</input> <br>
+              <input type='radio' name='answ-0' value="1">$55,733</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/snapshots/income_fullpres_final.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-14" title="Question 15">
+         <div class="ui-dialog-content">
+           <p> What is the most prominent housing type in our region?</p>
+              <input type='radio' name='answ-0' value="0">single-family detached</input> <br>
+              <input type='radio' name='answ-0' value="1">Townhomes</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/plan2040/docs/Appendix_Housing%20Section%20%28H1%29.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-15" title="Question 16">
+         <div class="ui-dialog-content">
+           <p> Which county has the highest % of Multi-family & attached housing units? ?</p>
+              <input type='radio' name='answ-0' value="0">DeKalb</input> <br>
+              <input type='radio' name='answ-0' value="1">Fulton</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/plan2040/docs/Appendix_Housing%20Section%20%28H1%29.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-16" title="Question 17">
+         <div class="ui-dialog-content">
+           <p> How much does a typical household in our region spend on transportation annually?</p>
+              <input type='radio' name='answ-0' value="0">$10,505</input> <br>
+              <input type='radio' name='answ-0' value="1">$14,305</input>
+              <br>
+              <p><a href="http://www.atlantaregional.com/land-use/housing">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-17" title="Question 18">
+         <div class="ui-dialog-content">
+           <p> What percent of our residents do not meet the minimum recommended physical activity?</p>
+              <input type='radio' name='answ-0' value="0">49%</input> <br>
+              <input type='radio' name='answ-0' value="1">79%</input>
+              <br>
+              <p><a href="http://www.atlantaregional.com/transportation/bicycle--pedestrian">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-18" title="Question 19">
+         <div class="ui-dialog-content">
+           <p> How many mie of existing paved multi-use trails do we have in the region?</p>
+              <input type='radio' name='answ-0' value="0">117</input> <br>
+              <input type='radio' name='answ-0' value="1">397</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/snapshots/income_fullpres_final.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+
+         <div id="dialog-19" title="Question 20">
+         <div class="ui-dialog-content">
+           <p> What % of our population works within a 5 minute bike ride to a trail?</p>
+              <input type='radio' name='answ-0' value="1">42%</input> <br>
+              <input type='radio' name='answ-0' value="0">12%</input>
+              <br>
+              <p><a href="http://documents.atlantaregional.com/snapshots/income_fullpres_final.pdf">Need a hint?</a></p>
+              <input type='submit' value='Submit'></input>
+         </div>
+       </div>
+    </section>
+
+    <section id="gameresults">
+      <div>
+        <h>Let's see how you did!</h3>
+        <p> Your score:</p>
+        <p>Your skill level:</p>
+      </div>
+    </section>
+
+    <section id="footer">
+      <p> For more information about the Atlanta Region visit <a href="www.atlantaregional.com">The Atlanta Regional Commision</a>
+
+    </section>
+
+    <script type="text/javascript" src="./js/jquery-2.2.2.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    </body>
+
+</html>

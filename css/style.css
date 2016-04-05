@@ -1,0 +1,138 @@
+body{
+  font-family: helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+#header{
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: #575b5c;
+  height: 100px;
+  padding: 5px;
+  width: 100%;
+}
+
+#gameBoard{
+    display: -webkit-flex;
+    display: flex;
+    width: 655px;
+    height: 650px;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("../imgs/bg_1-01.png")
+}
+
+.cell {
+  /*display: none;*/
+    align-items: center;
+    background-color: #14567F;
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    z-index: 1;
+    padding-left: 5px;
+    vertical-align: middle;
+    line-height: 90px;
+}
+#gameRules{
+ color: grey;
+}
+/*.map{
+  width: 100%;
+  padding: 10px;
+  z-index: -1;
+}*/
+
+.map img{
+  z-index:-1;
+}
+
+li a {
+  text-decoration: none;
+  text-align: center;
+  color:#E7A423;
+  background-color: #E6E6E6;
+  padding: 14px 50px;
+  list-style: none;
+  border-radius: 15px;
+  margin: 0 10px 0 10px;
+}
+
+li a.active{
+  color: #E7A423;
+  background-color: #14567F;
+}
+
+#nav {
+  background-color: #575b5c;
+  width: 100%;
+}
+ul{
+  display: flex;
+  flex-wrap: row wrap;
+  list-style: none;
+  display: inline-flex;
+}
+
+#gameresults{
+  border: #E7A423 3px dashed;
+  color:#E7A423;
+  background-color: #575b5c;
+  height: 200px;
+  margin: 0 auto;
+  line-height: 1.3em;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 0 4px #575b5c, 2px 1px 6px 5px rgba(10, 10, 0, 0.5);
+  width: 400px;
+}
+
+h3{
+  color:white;
+}
+#footer {
+  color:#E7A423;
+  text-align: center;
+  background-color: #575b5c;
+  color: white;
+  height: 55px;
+  background-color: #14567F;
+}
+#footer a{
+  text-decoration: none;
+  color: #E7A423;
+}
+
+input[type=submit] {
+  width: 100%;
+  display:center;
+  background-color: #E7A423;
+  color: white;
+}
+
+div p {
+  font-size: 14px;
+}
+
+div input {
+  font-size: 14px;
+}
+button{
+  width: 100%;
+  display:center;
+  background-color: #E7A423;
+  color: white;
+}
+
+
+
