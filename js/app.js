@@ -4,6 +4,14 @@ $(document).ready(function(){
 var resArray = [];
 var result = [];
 
+var scoreBox = function() {
+                result = resArray.filter(function (number) {
+                  return number !== '0' && number > '0';
+                  });
+
+                 $('#score').html(" " + result.length + " out of " + resArray.length);
+              };
+
 // gameBoard dialog boxes//
 $( "#dialog-0" ).dialog({ autoOpen: false });
 $( "#item-0" ).click(function() {
@@ -19,6 +27,8 @@ $( "#dialog-0" ).dialog( "open");
     $("#item-0").hide("drop", {direction: "down"}, "slow");
     $("#dialog-0").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -35,6 +45,8 @@ $( "#item-1" ).click(function() {
     $("#item-1").hide("drop", {direction: "down"}, "slow");
     $("#dialog-1").remove();
     console.log(resArray.length);
+
+    scoreBox();
 
   });
 });
@@ -53,11 +65,7 @@ $( "#item-2" ).click(function() {
     $("#dialog-2").remove();
     console.log(resArray.length);
 
-    result = resArray.filter(function (number) {
-    return number !== '0' && number > '0';
-    });
-
-   alert("Your score is " + result.length + " out of 3.")
+    scoreBox();
   });
 });
 
@@ -74,6 +82,8 @@ $( "#item-3" ).click(function() {
     $("#item-3").hide("drop", {direction: "down"}, "slow");
     $("#dialog-3").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -90,6 +100,8 @@ $( "#item-4" ).click(function() {
     $("#item-4").hide("drop", {direction: "down"}, "slow");
     $("#dialog-4").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -106,6 +118,8 @@ $( "#item-5" ).click(function() {
     $("#item-5").hide("drop", {direction: "down"}, "slow");
     $("#dialog-5").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -122,6 +136,8 @@ $( "#item-6" ).click(function() {
     $("#item-6").hide("drop", {direction: "down"}, "slow");
     $("#dialog-6").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -138,6 +154,8 @@ $( "#item-7" ).click(function() {
     $("#item-7").hide("drop", {direction: "down"}, "slow");
     $("#dialog-7").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -154,6 +172,8 @@ $( "#item-8" ).click(function() {
     $("#item-8").hide("drop", {direction: "down"}, "slow");
     $("#dialog-8").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -170,6 +190,8 @@ $( "#item-9" ).click(function() {
     $("#item-9").hide("drop", {direction: "down"}, "slow");
     $("#dialog-9").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -186,6 +208,8 @@ $( "#item-10" ).click(function() {
     $("#item-10").hide("drop", {direction: "down"}, "slow");
     $("#dialog-10").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -202,6 +226,8 @@ $( "#item-11" ).click(function() {
     $("#item-11").hide("drop", {direction: "down"}, "slow");
     $("#dialog-11").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -218,6 +244,8 @@ $( "#item-12" ).click(function() {
     $("#item-12").hide("drop", {direction: "down"}, "slow");
     $("#dialog-12").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -234,6 +262,8 @@ $( "#item-13" ).click(function() {
     $("#item-13").hide("drop", {direction: "down"}, "slow");
     $("#dialog-13").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -250,6 +280,8 @@ $( "#item-14" ).click(function() {
     $("#item-14").hide("drop", {direction: "down"}, "slow");
     $("#dialog-14").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -266,6 +298,8 @@ $( "#item-15" ).click(function() {
     $("#item-15").hide("drop", {direction: "down"}, "slow");
     $("#dialog-15").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -282,6 +316,8 @@ $( "#item-16" ).click(function() {
     $("#item-16").hide("drop", {direction: "down"}, "slow");
     $("#dialog-16").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -298,6 +334,8 @@ $( "#item-17" ).click(function() {
     $("#item-17").hide("drop", {direction: "down"}, "slow");
     $("#dialog-17").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -314,6 +352,8 @@ $( "#item-18" ).click(function() {
     $("#item-18").hide("drop", {direction: "down"}, "slow");
     $("#dialog-18").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 
@@ -330,6 +370,8 @@ $( "#item-19" ).click(function() {
     $("#item-19").hide("drop", {direction: "down"}, "slow");
     $("#dialog-19").remove();
     console.log(resArray.length);
+
+    scoreBox();
   });
 });
 

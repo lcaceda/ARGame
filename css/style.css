@@ -86,9 +86,9 @@ ul{
 
 #gameresults{
   border: #E7A423 3px dashed;
-  color:#E7A423;
+  color:white;
   background-color: #575b5c;
-  height: 200px;
+  height: 100px;
   margin: 0 auto;
   line-height: 1.3em;
   border-radius: 10px;
@@ -121,7 +121,7 @@ input[type=submit] {
 }
 
 div p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 div input {
