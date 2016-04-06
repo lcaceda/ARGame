@@ -23,9 +23,11 @@ ARGame is nerdy game in which you can test your knowledge of the Atlanta Region.
 work flow can be found here: <https://trello.com/b/bXMePQwS/argame>
 
 mockup:
+
 ![alt text] (https://trello-attachments.s3.amazonaws.com/56faebafbccd6cb7aa044a9f/612x792/eaef9dda896e8a32c212a2940269c96f/sketch-01-01.png)
 
 wireframe:
+
 ![alt text] (https://raw.githubusercontent.com/lcaceda/ARGame/gh-pages/imgs/wireframe.png)
 
 
