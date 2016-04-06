@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
 var resArray = [];
+var result = [];
 
 // gameBoard dialog boxes//
 $( "#dialog-0" ).dialog({ autoOpen: false });
@@ -51,6 +52,12 @@ $( "#item-2" ).click(function() {
     $("#item-2").hide("drop", {direction: "down"}, "slow");
     $("#dialog-2").remove();
     console.log(resArray.length);
+
+    result = resArray.filter(function (number) {
+    return number !== '0' && number > '0';
+    });
+
+   alert("Your score is " + result.length + " out of 3.")
   });
 });
 
